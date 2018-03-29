@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_normal_bg"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/menu_item1"
+            style="@style/menu_item_text_style"
+            android:text="分享" />
+
+        <View style="@style/menu_item_divider_style" />
+
+        <Button
+            android:id="@+id/menu_item2"
+            style="@style/menu_item_text_style"
+            android:text="收藏" />
+
+        <View style="@style/menu_item_divider_style" />
+
+        <Button
+            android:id="@+id/menu_item3"
+            style="@style/menu_item_text_style"
+            android:text="收藏夹"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/main_bg"
+              android:orientation="vertical">
+    <include layout="@layout/activity_title"
+        android:id="@+id/title_below"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/biaozhunhong3"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:padding="8dp"
+            android:text=""
+            android:textColor="@color/bright_foreground_inverse_material_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/date_detail"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="58sp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:paddingBottom="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/bright_foreground_inverse_material_light"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+<ImageView
+    android:id="@+id/img"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content" />
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

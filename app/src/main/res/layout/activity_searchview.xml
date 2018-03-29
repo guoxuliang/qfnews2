@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ssxinzi9_press"
+    tools:context="me.weyye.todaynews.ui.activity.SearchViewActivity">
+
+    <include layout="@layout/activity_title"
+        android:id="@+id/title_below"/>
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionSearch"
+        android:queryHint="请输入搜索内容" />
+<TextView
+    android:id="@+id/text_zhiding"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="搜索指定内容"
+    android:textSize="16sp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:textColor="@color/button_material_dark"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
